@@ -1,6 +1,7 @@
+DECLARE
+
 BEGIN
-  DBMS_HPROF.start_profiling (
-    location => 'PROFILER_DIR',
+  DBMS_HPROF.start_profiling (location => 'PROFILER_DIR',
     filename => 'prc_load_order.txt');
    
     for c1 in (select distinct order_id from order_lines order by order_id) loop 
