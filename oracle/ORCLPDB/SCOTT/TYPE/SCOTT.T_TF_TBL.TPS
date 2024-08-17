@@ -1,0 +1,2 @@
+CREATE OR REPLACE TYPE SCOTT.t_tf_tbl IS TABLE OF t_tf_row;
+/
