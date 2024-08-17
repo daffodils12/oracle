@@ -1,0 +1,6 @@
+CREATE OR REPLACE TRIGGER SCOTT.tab1_asiu_trg
+AFTER INSERT OR UPDATE ON SCOTT.TAB1
+BEGIN
+  trigger_api.tab1_statement_change;
+END;
+/
