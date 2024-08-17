@@ -1,0 +1,5 @@
+CREATE OR REPLACE PACKAGE SCOTT.types AS 
+  TYPE cursor_type IS REF CURSOR;
+END Types; 
+
+/
