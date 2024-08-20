@@ -1,3 +1,5 @@
+--All the 3 collection methods are given below
+
 --associative array
 set serverout on;
 declare
