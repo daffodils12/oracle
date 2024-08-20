@@ -1,3 +1,5 @@
+DECLARE
+
 BEGIN
   DBMS_HPROF.start_profiling (
     location => 'PROFILER_DIR',
