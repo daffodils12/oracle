@@ -1,3 +1,5 @@
+-- Given below procedure passes sys_refcursor as a parameter and extracts
+-- and displays the data from the passed sysrefcursor
 create or replace procedure sysrefcur_test (p_srf sys_refcursor) as
 	TYPE v_order_row is record
 	(order_id number,
