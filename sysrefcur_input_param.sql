@@ -9,7 +9,6 @@ create or replace procedure sysrefcur_test (p_srf sys_refcursor) as
 	v_orow	v_order_row:=v_order_row(); 
 	
 begin
-
     loop
         fetch p_srf into v_orow;
         exit when p_srf%notfound;
