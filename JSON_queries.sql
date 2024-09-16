@@ -1,3 +1,8 @@
+
+  CREATE TABLE "SCOTT"."JSON_TYPE" 
+   (ID NUMBER PRIMARY KEY, 
+	JSON_DATA JSON);
+
 select id,json_serialize(json_Data pretty) json_Data from json_type;
 
 delete from json_type;
