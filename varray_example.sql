@@ -2,7 +2,7 @@ CREATE OR REPLACE PROCEDURE PRC_ORDERS_VARRAY(p_order_id in NUMBER) as
     TYPE r_order_type IS RECORD(
         order_id order_lines.order_id%TYPE,
         line_qty order_lines.line_qty%TYPE,
-		total_value order_lines.total_value%TYPE
+	total_value order_lines.total_value%TYPE
     ); 
     
     TYPE t_order_type IS VARRAY(200) 
